@@ -15,3 +15,10 @@ a:visited{
     width: 10px;
     height: 14px;
 }
+input{
+    width: 50px;
+    background-color: grey;
+    color: #DCD7C9;
+    font-weight: bold;
+    font-size: 1em;
+}
