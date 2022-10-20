@@ -101,12 +101,13 @@ main li{
     margin-bottom: 1px;
 }
 
+main > li > a{
+    text-decoration: none;
+    color: white;
+}
 
-
-
-a:visited{
-    background-color: black;
-    color: red;
+main > li > a:visited{
+    color: rgb(206, 36, 36);
 }
 
 input{
