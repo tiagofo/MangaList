@@ -120,7 +120,7 @@ section > div.titulo > h2{
 }
 
 .row{
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.459);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.459);
     display: grid;
     grid-template-columns: 70px auto;
     grid-template-rows: repeat(5, 1ft);
