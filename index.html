@@ -9,122 +9,464 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
     <title>MangaList</title>
 </head>
-<body>
-    <header id="topbar"  class="header">
+<body onresize="mudouTamanho()">
+    <header class="header">
         <a href="#" id="logo">Manga List</a>
-        <nav>
-            <ul class="menu">
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</i>
+        <menu id="itens" >
+            <ul>
                 <li><a href="#">Mangás</a></li>
                 <li><a href="#">Animes</a></li>
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Livros</a></li>
             </ul>
-        </nav>
+        </menu>
     </header>
 
     <section id="container">
-        <div class="titulo">
-            <h2>Lista de Mangás</h2>
-        </div>
+        <div class="titulo"><h2>Lista de Mangás</h2></div>
 
-
-        <div class="row">
-            <div class="capa"></div>
-            <div class="nome">Return of the Legend</div>
-            <div class="cap">
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/SLR-copiar-1-scaled-e1665797052672.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/second-life-ranker*'  target='_blank'>Second Life Ranker</a></div>
+            <div class='cap'>
                 <p>
-                    <button class="btn"> &darr; </button>
-                        <input type="number" class="ncap" name="1" id="i1" value="20" maxlength="5" size="5"> 
-                    <button class="btn"> &uarr; </button>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='68' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/6022e659a8e56external_cover.jpg);' ></div>
+            <div class='nome'><a href='https://argosscan.com/obras/1/martial-peak'  target='_blank'>Martial Peak</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='2323' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/external_cover.jpg);' ></div>
+            <div class='nome'><a href='https://saikaiscan.com.br/comics/tales-of-demons-and-gods-tdg?tab=capitulos'  target='_blank'>Tales of demons and god</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='400.5' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/survival-of-the-sword-king.jpeg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/survival-story-of-a-sword-king-in-a-fantasy-world*'  target='_blank'>Survival Story of a Sword King in a Fantasy World</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='122' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/overgeared_titleimage.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/overgeared*'  target='_blank'>Overgeared</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='150' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/The-Last-Human.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/the-last-human*'  target='_blank'>The Last Human</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='200' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/603acf372b66eexternal_cover.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/doupo-cangqiong*'  target='_blank'>Doupo Cangqiong</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='382' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/capa_nm.jpg);' ></div>
+            <div class='nome'><a href='https://markscans.online/manga/nano/'  target='_blank'>Nano Machine</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='122' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/e2021404.jpg);'' ></div>
+            <div class='nome'><a href='https://unionleitor.top/manga/one-punch-man'  target='_blank'>One Punch Man</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='171' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/Doctors-Rebirth.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/doctors-rebirth-704120/'  target='_blank'> Doctor’s Rebirth</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='95' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/pd.jpg);' ></div>
+            <div class='nome'><a href='https://markscans.online/manga/legend-of-sura-the-poisonous-dragon/'  target='_blank'>Poison Dragon</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='103' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/The-Great-Mage-Returns-After-4000-Years-e1653052958881.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/the-great-mage-returns-after-4000-years*'  target='_blank'>The Great Mage Returns After 4,000 Years</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='146' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/O-Comeco-Depois-do-Fim-e1665797596343.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/o-comeco-depois-do-fim*'  target='_blank'>The Beginning After the End</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='164' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/602ae39e55387external_cover.jpg);' ></div>
+            <div class='nome'><a href='https://saikaiscan.com.br/comics/star-martial-god-technique-smgt?tab=capitulos'  target='_blank'>Star Martial God Technique</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='547' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/lb.jpg);' ></div>
+            <div class='nome'><a href='https://markscans.online/manga/limit-breaker/'  target='_blank'>Limit Break</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='80' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/thelive.jpg);' ></div>
+            <div class='nome'><a href='https://markscans.online/manga/the-live/'  target='_blank'>The Live</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='108' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/62b0ad2c1cfd1_capa.jpg);' ></div>
+            <div class='nome'><a href='https://markscans.online/manga/absolute-sword-sense/'  target='_blank'> Absolute Sword Sense</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='21' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/60247f7d5a6ecexternal_cover.jpg);' ></div>
+            <div class='nome'><a href='https://mangalivre.net/manga/apotheosis/7247'  target='_blank'>Apotheosis</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='951' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/99-Wooden-Stick-Mangaschan.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/99-wooden-stick*'  target='_blank'>+99 Wooden Stick</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='26' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/we.jpg);' ></div>
+            <div class='nome'><a href='https://prismascans.net/manga/the-return-of-the-crazy-demon11/'  target='_blank'>The Return of the Crazy Demon</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='62' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/602ef38382a5dexternal_cover.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/skeleton-soldier-couldnt-protect-the-dungeon*'  target='_blank'>Skeleton Soldier Couldn’t Protect the Dungeon</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='202' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/Omniscient_Reader.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/omniscient-readers-viewpoint-*'  target='_blank'>Omniscient Reader’s Viewpoint</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='126' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/62b3cd58c0c8f_capa.jpg);' ></div>
+            <div class='nome'><a href='https://mangalivre.net/manga/damn-reincarnation/15458'  target='_blank'>Damn Reincarnation</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='36' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/swordmasters-youngest-son-manhwa.jpg);' ></div>
+            <div class='nome'><a href='https://reaperscans.net/series/swordmasters-youngest-son-manhwa-1666488786340'  target='_blank'> Swordmaster’s Youngest Son</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='41' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/rfd.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/reformation-of-the-deadbeat-noble-704120/'  target='_blank'>Reformation of the Deadbeat Noble</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='68' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/cover_250x350.jpg);' ></div>
+            <div class='nome'><a href='https://gekkou.com.br/manga/eleceed'  target='_blank'>Eleceed</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='215' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/00.jpg);' ></div>
+            <div class='nome'><a href='https://markscans.online/manga/mce/'  target='_blank'>Mercenary Enrollment</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='32' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/The-Scholars-Reincarnation.jpg);' ></div>
+            <div class='nome'><a href='https://prismascans.net/manga/the-scholar-reincarnation/'  target='_blank'> The Scholars Reincarnation</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='27' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/8962fd7d3d1fed1d2752.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/dungeon-reset*'  target='_blank'>Dungeon Reset</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='128' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/va.jpg);' ></div>
+            <div class='nome'><a href='https://mangalivre.net/manga/volcanic-age/6797'  target='_blank'> Volcanic Age</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='194' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/PD_Vol.02.jpg);' ></div>
+            <div class='nome'><a href='https://dropescan.com/manga/peerles-dad/'  target='_blank'>Peerless Dad</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='161' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/6021bf4084a25external_cover.jpg);' ></div>
+            <div class='nome'><a href='https://mangalivre.net/manga/reverse-villain/9105'  target='_blank'>Reverse Villain</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='75' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/LegendoftheNothernBlade.jpg);' ></div>
+            <div class='nome'><a href='https://saikaiscan.com.br/comics/legend-of-the-northern-blade-lnb?tab=capitulos'  target='_blank'>Legend of the Nothern Blade</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='130' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/b771f086f6647df96bc0bf79388ef0e0.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/mookhyang-dark-lady-704120/'  target='_blank'>MookHyang – Dark Lady</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='132' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/603b2b7cbc65dexternal_cover.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/fff-class-trashero-704120/'  target='_blank'> FFF-Class Trashero</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='0' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/TheTutoriaisTooHard.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/the-tutorial-is-too-hard-704120/'  target='_blank'>The Tutorial is Too Hard</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='0' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/solo-glitch-player-48664.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/bug-player-704120/'  target='_blank'>Bug Player</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='101' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
+                </p>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='capa' style='background-image: url(./imagens/capas/Solo-Necromancer-e1653008811512.jpg);' ></div>
+            <div class='nome'><a href='https://neoxscans.net/manga/solo-necromancer-704120/'  target='_blank'>Solo Necromancer</a></div>
+            <div class='cap'>
+                <p>
+                    <button class='btn'> &darr; </button>
+                        <input type='number' class='ncap' name='1' id='i1' value='0' maxlength='5' size='5'> 
+                    <button class='btn'> &uarr; </button>
                 </p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="capa"></div>
-            <div class="nome">Return of the Legend</div>
-            <div class="cap">
-                <p>
-                    <button class="btn"> &darr; </button>
-                        <input type="number" class="ncap" name="1" id="i1" value="20" maxlength="5" size="5"> 
-                    <button class="btn"> &uarr; </button>
-                </p>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="capa"></div>
-            <div class="nome">Return of the Legend</div>
-            <div class="cap">
-                <p>
-                    <button class="btn"> &darr; </button>
-                        <input type="number" class="ncap" name="1" id="i1" value="20" maxlength="5" size="5"> 
-                    <button class="btn"> &uarr; </button>
-                </p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="capa"></div>
-            <div class="nome">Return of the Legend</div>
-            <div class="cap">
-                <p>
-                    <button class="btn"> &darr; </button>
-                        <input type="number" class="ncap" name="1" id="i1" value="20" maxlength="5" size="5"> 
-                    <button class="btn"> &uarr; </button>
-                </p>
-            </div>
-        </div>        
 
-        <div class="row">
-            <div class="capa"></div>
-            <div class="nome">Return of the Legend</div>
-            <div class="cap">
-                <p>
-                    <button class="btn"> &darr; </button>
-                        <input type="number" class="ncap" name="1" id="i1" value="20" maxlength="5" size="5"> 
-                    <button class="btn"> &uarr; </button>
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="capa"></div>
-            <div class="nome">Return of the Legend</div>
-            <div class="cap">
-                <p>
-                    <button class="btn"> &darr; </button>
-                        <input type="number" class="ncap" name="1" id="i1" value="20" maxlength="5" size="5"> 
-                    <button class="btn"> &uarr; </button>
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="capa"></div>
-            <div class="nome">Return of the Legend</div>
-            <div class="cap">
-                <p>
-                    <button class="btn"> &darr; </button>
-                        <input type="number" class="ncap" name="1" id="i1" value="20" maxlength="5" size="5"> 
-                    <button class="btn"> &uarr; </button>
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="capa"></div>
-            <div class="nome">Return of the Legend</div>
-            <div class="cap">
-                <p>
-                    <button class="btn"> &darr; </button>
-                        <input type="number" class="ncap" name="1" id="i1" value="20" maxlength="5" size="5"> 
-                    <button class="btn"> &uarr; </button>
-                </p>
-            </div>
-        </div>
 
     </section>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
 
     <footer>
         Site criado por <a href="https://github.com/tiagofo" target="_blank" rel="external">TFO &copy; 2022</a> 
